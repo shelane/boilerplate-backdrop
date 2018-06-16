@@ -64,7 +64,8 @@ site_install ()
 		--db-url='mysql://user:user@db/default' \
 		--account-mail="admin@example.com" \
 		--account-name="admin" \
-		--account-pass="admin"
+		--account-pass="admin" || true
+
 	
 	# Currently a way to set password at runtime with drush site-install
 	drush upwd admin --password=admin > /dev/null
