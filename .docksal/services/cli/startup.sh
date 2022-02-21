@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-
-ENV \
-	DRUSH_BACKDROP_VERSION=1.4.0
+DRUSH_BACKDROP_VERSION=1.4.0
 
 	# Drush modules
 	drush dl registry_rebuild --default-major=7 --destination=$HOME/.drush >/dev/null; \
